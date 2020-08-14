@@ -49,7 +49,7 @@
 
             function checkTooMuch(num) { // function out of $scope, so it CAN have same name
                 if (num === 0) {
-                    return 'Eat SOMETHING!!!';
+                    return 'Eat SOMETHING!!! (Please enter data first)';
                 }
                 if (num > 3) {
                     return 'TOO MUCH!!!';
