@@ -21,7 +21,7 @@ input {
   padding: 10px;
   border: 0px;
   margin-top: 5px;
-  background-color: #f0f0e0;
+  background-color: #f0f0f4;
   color: #0f0f14;
   font-size: 16px;
   font-weight: 700;
@@ -68,7 +68,7 @@ input {
   }
 
   li {
-    margin-bottom: 7px;
+    margin-bottom: 15px;
     margin-top: 15px;
     font-size: 1.2em;
     animation-duration: 350ms;

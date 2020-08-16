@@ -57,11 +57,35 @@
 
         }
 
-
         function ShoppingListCheckOff() {
             var service = this;
 
-            var toBuy = [];
+            var toBuy = [
+                {
+                    name: "Cookies",
+                    quantity: "1 Bag"
+                },
+                {
+                    name: "Coke",
+                    quantity: "10 bottles"
+                },
+                {
+                    name: "Chips",
+                    quantity: "7 Bag"
+                },
+                {
+                    name: "Chocolate",
+                    quantity: "1 Bar"
+                },
+                {
+                    name: "Pizza",
+                    quantity: "1 Box"
+                },
+                {
+                    name: "Jelly",
+                    quantity: "1 Cup"
+                },
+            ];
             var alreadyBought = [];
 
             service.bought = function () {
