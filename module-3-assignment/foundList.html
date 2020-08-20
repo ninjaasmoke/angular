@@ -1,0 +1,13 @@
+<ul>
+  <li ng-repeat=" item in list.items ">
+    <span id="list">{{ item.name }}</span> 
+    <br>
+    <span class="s-name">Short Name: {{ item.short_name }} </span>
+    <p>
+      {{ item.description }}
+    </p>
+    <button ng-click="list.onRemove({index: $index});" class="remove-button">Don't want this one!!!</button>
+  </li>
+</ul>
+
+<div class="error" ng-transclude></div>

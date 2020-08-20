@@ -6,6 +6,11 @@
 body {
   background-color: #04040f;
   font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+ul {
+  text-align: start;
 }
 
 h1, h2 {
@@ -35,6 +40,10 @@ input {
     border-radius: 10px;
     color: black;
     width: max-content;
+}
+
+.mid {
+  text-align: center;
 }
 
   .listBoughtItem {

@@ -15,16 +15,30 @@
   <div class="container">
     <h1>Shopping List Check Off</h1>
 
-    <hr>
-
     <div class="row">
+
+      <div class="col-md-12">
+        <hr>
+      </div>
+
+      <div class="col-md-12 mid" ng-controller="ToBuyController as toBuy">
+        <div>
+          <h2>
+            Add Items
+            </h3>
+        </div>
+        <input type="text" ng-model="toBuy.itemName" placeholder="Add Item">
+        <input type="text" ng-model="toBuy.itemQuantity" placeholder="Add Quantity">
+        <button ng-click="toBuy.addItem();" ng-if="toBuy.itemName && toBuy.itemQuantity" class="bought">Add</button>
+      </div>
+
+      <div class="col-md-12">
+        <hr>
+      </div>
 
       <!-- To Buy List -->
       <div class="col-md-6" ng-controller="ToBuyController as toBuy">
         <h2>To Buy:</h2>
-        <input type="text" ng-model="toBuy.itemName" placeholder="Add Item">
-        <input type="text" ng-model="toBuy.itemQuantity" placeholder="Add Quantity">
-        <button ng-click="toBuy.addItem();" ng-if="toBuy.itemName && toBuy.itemQuantity" class="bought">Add</button>
         <ul>
           <li ng-repeat=" item in toBuy.items ">
             <span class="listItem">{{ item.quantity }} of {{ item.name }}</span> <button ng-click="toBuy.bought($index)"
