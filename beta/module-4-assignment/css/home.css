@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: azure;
+    height: 100%;
+    padding-top: 0px;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    background-color: #0f0f0f;
+    padding: 15px 10px 15px;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+div {
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    /* margin: 0px 20px 0px 20px; */
+    text-decoration: none;
+    padding: 0 30px 5px;
+    animation-duration: 9s;
+    border-radius: 5px;
+}
+
+a:hover,
+a:scope {
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 2px 2px 10px 15px #10101f;
+}
+
+.topheight {
+    margin-top: 80px;
+    padding-top: 80px;
+    clear: both;
+}
+
+.res {
+    color: rgb(12, 207, 12);
+}
+
+.di {
+    color: aliceblue;
+    width: 50%;
+    padding: 10px;
+    float: left;
+    font-size: 24px;
+}
+
+.categories {
+    clear: both;
+    margin-top: 70px;
+}
+
+.category {
+    font-family: 'Comfortaa';
+    background-color: #909090;
+    color: #10101f;
+    border-radius: 4px;
+    text-align: left;
+    width: 98%;
+    margin: 10px 10px;
+    padding: 15px;
+}
+
+.end {
+    font-family: 'Montserrat';
+    float: right;
+    background-color: #10101f;
+    color: #d3d3d3;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+.menuitem {
+    color: aliceblue;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    float: left;
+    font-size: 24px;
+}
+
+.category:hover {
+    cursor: pointer;
+    background-color: #d3d3d3;
+}
+
+.cls_active {
+    color: white;
+    background-color: #6060a0;
+}
+
+.row {
+    width: 100%;
+    text-align: center;
+    clear: both;
+    padding: 20px 0px 25px;
+}
+
+.home {
+    text-align: left;
+    width: 50%;
+    padding: 20px 20px 0px 20px;
+    line-height: 95px;
+    margin-top: 30vh;
+    font-size: 90px;
+    font-weight: 900;
+    color: yellow;
+}
+
+.cat-link {
+    text-align: center;
+    width: 100%;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #111;
+    border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6060a0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+}

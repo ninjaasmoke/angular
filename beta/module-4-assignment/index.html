@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="menuapp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <ui-view class="row"></ui-view>
+</body>
+
+
+<!-- Angular -->
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-ui-router.min.js"></script>
+
+
+<!-- Modules -->
+<script src="src/menuapp.module.js"></script>
+<script src="src/data.module.js"></script>
+
+<!-- Routes -->
+<script src="src/routes.js"></script>
+
+
+<script src="src/categories.component.js"></script>
+<script src="src/main-categories.controller.js"></script>
+<script src="src/items.component.js"></script>
+<script src="src/main-items.controller.js"></script>
+
+
+<!-- Service -->
+<script src="src/menudata.service.js"></script>
+
+<!-- Constants -->
+<script src="src/data.constant.js"></script>
+
+</html>
