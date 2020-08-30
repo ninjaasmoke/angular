@@ -1,13 +1,11 @@
-(function () {
-"use strict";
+(function() {
+    'use strict';
+    angular.module('public')
+        .controller('MenuItemsController', MenuItemsController);
+    MenuItemsController.$inject = ['menuItems'];
 
-angular.module('public')
-.controller('MenuItemsController', MenuItemsController);
-
-MenuItemsController.$inject = ['menuItems'];
-function MenuItemsController(menuItems) {
-  var $ctrl = this;
-  $ctrl.menuItems = menuItems;
-}
-
+    function MenuItemsController(menuItems) {
+        var menuItemsCtrl = this;
+        menuItemsCtrl.menuItems = menuItems;
+    }
 })();

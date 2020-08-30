@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
     angular.module('common', [])
         .constant('APIBasePath', 'https://anantajitjg-ng-courseapp.herokuapp.com')

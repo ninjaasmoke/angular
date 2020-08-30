@@ -1,19 +1,17 @@
-(function () {
+(function() {
     'use strict';
-
-    angular
-        .module('public')
-        .controller('SignUpController', SignUpController)
-
+    angular.module('public')
+        .controller('SignUpController', SignUpController);
     SignUpController.$inject = ['UserService'];
+
     function SignUpController(UserService) {
         var signUpCtrl = this;
-        signUpCtrl.processForm = function (completed) {
-            if (signUpCtrl.user) {
+        signUpCtrl.processForm = function(completed) {
+            if (!signUpCtrl.user) {
                 signUpCtrl.user = {};
             }
             UserService.getUserFavMenu(signUpCtrl.user.favMenu)
-                .then(function (response) {
+                .then(function(result) {
                     signUpCtrl.error = false;
                     if (completed) {
                         UserService.setUserData(signUpCtrl.user);
@@ -21,14 +19,11 @@
                     } else {
                         signUpCtrl.valid = true;
                     }
-                }).catch(function (e) {
+                }).catch(function(e) {
                     signUpCtrl.valid = false;
                     signUpCtrl.error = true;
                     signUpCtrl.completed = false;
-                    console.error(e);
                 });
-        }
-
+        };
     }
-
-}());
+})();
