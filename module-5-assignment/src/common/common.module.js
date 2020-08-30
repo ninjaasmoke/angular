@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular.module('common', [])
-        .constant('APIBasePath', 'https://ychaikin-course5.herokuapp.com')
+        .constant('APIBasePath', 'https://davids-restaurant.herokuapp.com')
         .config(config);
     config.$inject = ['$httpProvider'];
 
